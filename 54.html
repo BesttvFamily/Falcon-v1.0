@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<body background="http://blackboxstudio.fr/wp-content/uploads/2013/11/home_page_noir.jpg">
+
+<title></title>
+    <script type="text/javascript" language="javascript">
+     var player ;
+	function onSilverlightLoad() {
+                var slApp = document.getElementById('player');
+                player = slApp.content.page.Player;
+         }
+ function capsChange() {
+            var brMax = document.getElementById('Qualite');
+            var brMin = document.getElementById('Qualite');
+            if(brMax.value=="Auto"){
+             brMax.value=3400000;
+             brMin.value=450000;
+               }
+            player .MaxVideoBitrate = brMax.value;
+            player .MinVideoBitrate = brMin.value;
+}		
+    </script>
+<body bgcolor="black">
+<FONT COLOR="#ECF8E0">Change Quality: </FONT>
+<select name="Qualite" id="Qualite" onChange="capsChange()">
+<option selected="selected" value="450000">Auto</option>
+<option value="450000">144p</option>
+<option value="600000">240p</option>
+<option value="1200000">360p</option>
+<option value="1800000">480p</option>
+<option value="2600000">720p</option>
+<option value="3400000">1080p</option></select>
+</select> 
+<FONT style="color:#ECF8E0; float:right; padding-right:9px; right:50; font-size:15px; position:absolute;">Powered by mohamed-alqadi</FONT>
+<object width="343px" height="15px">    <param name="movie" value="Ql.swf">     <object id="player" data="data:application/x-silverlight-2," type="application/x-silverlight-2" height="97%" width="100%"><param name="background" value="black"><param name="source" value="OVP.xap"><param name="onload" value="onSilverlightLoad"><param name="enableHtmlAccess" value="true"><param name="onload" value="onSilverlightLoad" /><param name="onError" value="onSilverlightError"><param name="minRuntimeVersion" value="4.0.50401.0"><param name="MaxFrameRate" value="30"><param name="initparams"  value="mediasource=
+http://besmenaas-s.akamaihd.net/live/233718_233719/besmena02s.isml/Manifest?primaryToken=1483302640_4762f5e90bd1754be95b68d566f002ad
+,autoplay=true,stretchmode=Stretch,stretchmodefullscreen=Fit,smfPlugins=MSSmoothStreamingPlugin.xap,theme=HD.xaml,OverlayLogWriter.xap,showstatistics=false,muted=false,playlistoverlay=false,loglevel=all"><a href="http://go.microsoft.com/fwlink/?LinkID=124807" style="text-decoration: none;"><img src="http://besmenaas-s.akamaihd.net/live/233720_233721/besmena03s.isml/Manifest?primaryToken=1470597477_e363e8453c79f373b123b5290c98467b" alt="Get Microsoft Silverlight" style="border-style: none;"></a></object>
